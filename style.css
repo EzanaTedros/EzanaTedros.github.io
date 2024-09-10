@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to left,  rgb(1, 1, 87) , light rgb(26, 26, 240));
+    background: linear-gradient(to right , #20296e , #18599b);
     overflow: hidden;
     margin: 0px;
     font-size: 1.25vw;
