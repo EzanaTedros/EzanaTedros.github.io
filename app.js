@@ -1,12 +1,11 @@
-document.addEventListener("DOMContentLoaded" , () => {
-    const images = document.querySelectorAll("img");
-    for(const image of images){
-        fetch("https://dog.ceo/api/breeds/image/random")
-        .then(response => response.json())
-        .then(data => {
-            image.src = data.message
-        image.width = 600;
-        image.height = 450;
-        })
-    }
-})
+ const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+ });
+
+ const hiddenElements = document.querySelectorAll('.hidden');
+ hiddenElements.forEach((e1) => observer.observe(e1));
